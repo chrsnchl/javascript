@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<script>
+var NFC_teams = ["Giants", "Eagles", "Cowboys", "Redskins","Rams", "Cardinals, Niners", "Seahwaks", "Falcons","Saints","Panthers", "Bucs", "Packers","Bears","Lions","Vikings" ]
+
+// I want to pull a random string out of the array
+
+//Breaking down complicated statement into simpler one
+//var randomNumber = NFC_teams[Math.floor(Math.random() * NFC_teams.length)];
+
+//array length is 16, replacing NFC_teams.length with 16
+//var randomNumber = NFC_teams[Math.floor(Math.random() * 16)];
+
+//Math.random() generates a number between 0 and 1. For this example, I pick 0.458
+//var randomNumber = NFC_teams[Math.floor(0.458 * 16)];
+
+//0.458 * 16 is 7.328
+//var randomNumber = NFC_teams[Math.floor(7.328)];
+
+//Math.floor(7.328) returns 7
+//var randomNumber = NFC_teams[7];
+
+//7th array item happens to be seahawks (first element is 0)
+//var randomNumber = "Seahawks";
+
+var randomNumber = NFC_teams[Math.floor(Math.random() * NFC_teams.length)];
+console.log("first attempt, value of randomNumber is " + randomNumber);
+
+var randomNumber = NFC_teams[Math.floor(Math.random() * NFC_teams.length)];
+console.log("second attempt, value of randomNumber is " + randomNumber);
+
+var randomNumber = NFC_teams[Math.floor(Math.random() * NFC_teams.length)];
+console.log("third attempt, value of randomNumber is " + randomNumber);
+
+
+
+
+
+
+</script>	
+	</head>
+	<body>
+	NFC Teams Test File, (Check console log)
+</body>
+</html>
